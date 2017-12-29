@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import pandas as pd
 import numpy as np
@@ -13,4 +13,3 @@ weights = pd.read_csv(weight_file,
 print("Loaded weights, shape: {}".format(weights.values.shape))
 
 np.save("data/f16_glove_weights.npy", weights.values)
-
