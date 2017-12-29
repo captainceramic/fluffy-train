@@ -1,6 +1,8 @@
 #!/usr/bin/awk -f
 
-# This script just prints the token, none of the other things.
+# This script prints everything except the first column
+# of the piped-in text file.
+# Based on: https://stackoverflow.com/questions/2626274/print-all-but-the-first-three-columns
 BEGIN {}
 
 {

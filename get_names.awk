@@ -1,6 +1,7 @@
 #!/usr/bin/awk -f
 
-# This script just prints the token, none of the other things.
+# This script prints the first column of the piped-in text file.
+
 BEGIN {}
 
 {print $1;}
