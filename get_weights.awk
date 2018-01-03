@@ -9,9 +9,11 @@ BEGIN {}
     # Blank out first column.
     $1 = "";
 
-    # I don't quite know why this works? 'Recalculate'?
-    $0=$0;
-    NF=NF;
+    # Set the $0 (full column) to the current value of the full column.
+    $0 = $0;
+    
+    NF = NF;
+    
     print;
 }
 
